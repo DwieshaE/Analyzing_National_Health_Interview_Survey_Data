@@ -1,1 +1,7 @@
-Writing a function to run a multiple regression in R
+##Writing a function to run a multiple regression in R
+Data <- function(x, y) {
+     ans <- t.test(x ~ y, mu=0, alt="two.sided", conf=0.95, var.eq=F, paired=F)
+return(ans)    
+}
+
+data(airquality, )
