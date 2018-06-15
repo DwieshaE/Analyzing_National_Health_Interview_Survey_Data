@@ -13,3 +13,7 @@ export(list(mtcars = mtcars, iris = iris), "multi.rdata")
 
 ## as a character vector
 export(c("mtcars", "iris"), "multi.rdata")
+
+
+Taken from :
+https://cran.r-project.org/web/packages/rio/vignettes/rio.html
