@@ -1,3 +1,7 @@
+## reading in xls packages
+install.packages("xlsx")
+library(xlsx)
+mydata<- read.xlsx("./desktop/data/.xlsx")
 
 Cleaning data
 ## Extracting appointment column without 1
