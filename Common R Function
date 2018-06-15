@@ -1,7 +1,14 @@
-##Writing a function to run a multiple regression in R
-Data <- function(x, y) {
-     ans <- t.test(x ~ y, mu=0, alt="two.sided", conf=0.95, var.eq=F, paired=F)
-return(ans)    
-}
 
-data(airquality, )
+Cleaning data
+## Extracting appointment column without 1
+head(mydata[mydata$appointment > 1])
+
+## removing duplicated name
+install.packages("dplyr")
+library("dplyr")
+distinct(mydata, PatName )
+
+# Example remove duplicated rows based on Sepal.Length- iris data set
+distinct(my_data, Sepal.Length)
+distinct_(my_data,  "Sepal.Length", "Petal.Width")
+
