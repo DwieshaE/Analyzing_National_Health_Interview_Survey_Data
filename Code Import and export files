@@ -1,0 +1,15 @@
+library("rio")
+
+export(mtcars, "mtcars.csv")
+export(mtcars, "mtcars.rds")
+export(mtcars, "mtcars.dta")
+
+# export to sheets of an Excel workbook
+export(list(mtcars = mtcars, iris = iris), "multi.xlsx")
+
+# export to an .Rdata file
+## as a named list
+export(list(mtcars = mtcars, iris = iris), "multi.rdata")
+
+## as a character vector
+export(c("mtcars", "iris"), "multi.rdata")
