@@ -1,0 +1,26 @@
+install.packages("dplyr", "rio")
+library(stats)
+library(c("dplyr", "rio"))
+
+## reading in xls packages
+
+mydata1 <- read.csv("C:\\Users\\E\\Desktop\\Data Science Course\\Loose data\\PLUSM_Outcomesect.csv")
+head(mydata1)
+names(mydata1)
+
+Cleaning data
+## Extracting appointment column without 1
+
+Clean <- head(mydata1[mydata1[, "Appointment" ] > 1,])
+head(Clean)
+
+
+## removing duplicated name using dplyr
+
+distinct(mydata1, Patname) ##does not keep the data frame
+
+Clean[!duplicated(Clean$Patname), ]
+
+head(Clean[!duplicated(Clean$Patname), ])
+export(mtcars, "mtcars.csv")
+?distinct
