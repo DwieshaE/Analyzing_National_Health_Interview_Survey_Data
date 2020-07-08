@@ -4,7 +4,7 @@ library(c("dplyr", "rio"))
 
 ## reading in xls packages
 
-mydata1 <- read.csv("C:\\Users\\E\\Desktop\\Data Science Course\\Loose data\\PLUSM_Outcomesect.csv")
+mydata1 <- read.csv("./PLUSM_Outcomesect.csv")
 head(mydata1)
 names(mydata1)
 
