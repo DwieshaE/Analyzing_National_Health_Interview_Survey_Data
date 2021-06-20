@@ -1,2 +1,0 @@
-# Empower
-My Statistical skills
