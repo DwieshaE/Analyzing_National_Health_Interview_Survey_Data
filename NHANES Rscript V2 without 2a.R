@@ -1,5 +1,5 @@
 
-## Nhanes data set
+## Nhis data set
 setwd("C:/Users/Eric/Desktop/NHANES")
 library(rio); install_formats()
 library(dplyr); library(survey)
